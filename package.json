@@ -1,0 +1,23 @@
+{
+  "name": "azure-function-enforcer-example",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "rollup -c rollup.config.js --bundleConfigAsCjs",
+    "publish": "func azure functionapp publish"
+  },
+  "dependencies": {
+    "perimeterx-azure-js-sdk": "^0.2.0"
+  },
+  "devDependencies": {
+    "@azure/functions": "^3.0.0",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/node": "16.x",
+    "azure-functions-core-tools": "^4.x",
+    "rollup": "^3.12.1",
+    "tslib": "^2.5.0",
+    "typescript": "^4.0.0"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "bindings": [
+    {
+        "authLevel": "function",
+        "type": "httpTrigger",
+        "direction": "in",
+        "name": "req",
+        "route": "{*route}",
+        "methods": [
+          "get",
+          "post",
+          "options",
+          "trace",
+          "delete",
+          "put",
+          "connect",
+          "head"
+        ]
+      },
+      {
+        "type": "http",
+        "direction": "out",
+        "name": "res"
+      }
+  ],
+  "scriptFile": "../dist/EnforcerFunction/index.js"
+}
