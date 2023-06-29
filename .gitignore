@@ -3,6 +3,7 @@ obj
 csx
 .vs
 .vscode
+.idea
 edge
 Publish
 

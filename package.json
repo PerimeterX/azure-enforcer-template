@@ -1,13 +1,12 @@
 {
   "name": "azure-function-enforcer-example",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "scripts": {
-    "build": "rollup -c rollup.config.js --bundleConfigAsCjs",
-    "publish": "func azure functionapp publish"
+    "build": "rollup -c rollup.config.js --bundleConfigAsCjs"
   },
   "dependencies": {
-    "perimeterx-azure-js-sdk": "^0.2.0"
+    "perimeterx-azure-js-sdk": "^0.3.0"
   },
   "devDependencies": {
     "@azure/functions": "^3.0.0",
