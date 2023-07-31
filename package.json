@@ -6,7 +6,7 @@
     "build": "rollup -c rollup.config.js --bundleConfigAsCjs"
   },
   "dependencies": {
-    "perimeterx-azure-js-sdk": "1.0.0"
+    "perimeterx-azure-js-sdk": "1.0.1"
   },
   "devDependencies": {
     "@azure/functions": "^3.0.0",
