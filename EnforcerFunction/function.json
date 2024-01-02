@@ -14,7 +14,8 @@
           "delete",
           "put",
           "connect",
-          "head"
+          "head",
+          "patch"
         ]
       },
       {
