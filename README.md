@@ -1,6 +1,7 @@
 # Azure Function Enforcer Example
 
 See the full official documentation for the Human Security Azure Enforcer [here](https://docs.perimeterx.com/docs/installation-azure).
+You can use the `enforcer-setup.cmd1 file to automate the enforcer setup process, or you can do it manually by following the instructions:
 
 1. Install dependencies with `npm install`.
 2. Configure the enforcer by modifying the `EnforcerFunction/config.ts` file.
