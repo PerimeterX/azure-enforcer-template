@@ -2,6 +2,14 @@
 
 See the full official documentation for the Human Security Azure Enforcer [here](https://docs.perimeterx.com/docs/installation-azure).
 
+## Automatic enforcer setup
+
+1. Run the `enforcer-setup.cmd` file to automate the enforcer setup process.
+2. CMD files are designed to run on Window.
+3. This script will setup enforcer with the basic functionlaity. To costumize it further, you can modify the `EnforcerFunction/config.ts` file using the [ official documentation](https://edocs.humansecurity.com/v1/docs/en/configuration-azure?highlight=azure).
+
+## Manual enforcer setup:
+
 1. Install dependencies with `npm install`.
 2. Configure the enforcer by modifying the `EnforcerFunction/config.ts` file.
 3. Compile the enforcer by running `npm run build`.
