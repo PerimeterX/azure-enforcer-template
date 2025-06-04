@@ -3,14 +3,16 @@
   "version": "1.1.0",
   "description": "",
   "scripts": {
-    "build": "rollup -c rollup.config.js --bundleConfigAsCjs"
+    "build": "rollup -c rollup.config.js --bundleConfigAsCjs",
+    "zip": "zip -r EnforcerFunction.zip . -x@.funcignore"
   },
   "dependencies": {
     "perimeterx-azure-js-sdk": "latest",
+    "@azure/functions": "^3.0.0"
   },
   "devDependencies": {
-    "@azure/functions": "^3.0.0",
     "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-typescript": "^11.0.0",
     "@types/node": "16.x",
