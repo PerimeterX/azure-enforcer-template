@@ -4,7 +4,7 @@ import typescript from '@rollup/plugin-typescript';
 import json from '@rollup/plugin-json';
 
 export default {
-    input: './EnforcerFunction/index.ts',
+    input: './src/index.ts',
     plugins: [
         nodeResolve({preferBuiltins: true}),
         typescript({module: 'esnext'}),
@@ -13,18 +13,11 @@ export default {
     ],
     output: [
         {
-            file: './dist/EnforcerFunction/index.js',
-            format: 'cjs',
-            generatedCode: {
-                constBindings: true
-            }
-        },
-        {
             file: './EnforcerFunction/index.js',
-            format: 'esm',
+            format: 'module',
             generatedCode: {
-                constBindings: true
-            }
+                preferConst: true
+            },
         }
     ]
 }

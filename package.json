@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "build:functionapp": "npm run functionapp:complie && npm run functionapp:zip",
-    "build:frontdoor": "npx perimeterx-azure-js-sdk -e ./EnforcerFunction/enforcerConfig.json",
+    "build:frontdoor": "npx perimeterx-azure-js-sdk -e src/enforcerConfig.json",
     "functionapp:complie": "rollup -c rollup.config.js --bundleConfigAsCjs",
     "functionapp:zip": "zip -r EnforcerFunction.zip . -x@.funcignore"
   },

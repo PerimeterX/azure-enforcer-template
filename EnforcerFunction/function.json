@@ -24,5 +24,6 @@
         "name": "res"
       }
   ],
-  "scriptFile": "../dist/EnforcerFunction/index.js"
+  "scriptFile": "./index.js",
+  "entryPoint": "default"
 }
