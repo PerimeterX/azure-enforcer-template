@@ -9,7 +9,7 @@
     "functionapp:zip": "zip -r EnforcerFunction.zip . -x@.funcignore"
   },
   "dependencies": {
-    "perimeterx-azure-js-sdk": "file:../perimeterx-azure-js-sdk"
+    "perimeterx-azure-js-sdk": "latest"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.6",
