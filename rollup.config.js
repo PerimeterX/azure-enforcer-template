@@ -1,15 +1,23 @@
-import { nodeResolve } from '@rollup/plugin-node-resolve';
+import {nodeResolve} from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from '@rollup/plugin-typescript';
+import json from '@rollup/plugin-json';
 
 export default {
-    input: './EnforcerFunction/index.ts',
-    plugins: [typescript({ module: 'esnext' }), nodeResolve(), commonjs()],
-    output: {
-        file: './dist/EnforcerFunction/index.js',
-        format: 'cjs',
-        generatedCode: {
-            constBindings: true
+    input: './src/index.ts',
+    plugins: [
+        nodeResolve({preferBuiltins: true}),
+        typescript({module: 'esnext'}),
+        json(),
+        commonjs(),
+    ],
+    output: [
+        {
+            file: './EnforcerFunction/index.js',
+            format: 'module',
+            generatedCode: {
+                preferConst: true
+            },
         }
-    }
+    ]
 }
